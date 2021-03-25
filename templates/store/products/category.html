@@ -1,4 +1,4 @@
-{% extends "./base.html" %}
+{% extends "../base.html" %}
 {% load static %}
 {% block title %}
   MangaPazar
@@ -8,25 +8,10 @@
 
 <main>
 
-  <section class="py-5 text-center container">
-    <div class="row py-lg-3">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="h1 fw-bold">Ara, Oku, Satın Al, Görüntüle</h1>
-        <p class="lead text-muted">Belki de her manga okuyucusunun sorunudur ucuz ve kaliteli manga bulmak. 
-          Gerek ekonomi gerek markaların ekstra kâr koymasından olsun istediğimiz mangaları bulmak biraz zor.
-        </p>
-        <span class ="lead text-muted"> Siz isteyin biz bu sorunları ortadan kaldıralım.</span>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Hesap Oluştur</a>
-        </p>
-      </div>
-    </div>
-  </section>
-
   <div class="album py-5 bg-light">
     <div class="container">
 
-      <div class="pb-3 h5">Manga / Webtoon</div>
+      <div class="pb-3 h5">{{category.name|title}}</div>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
 
         {% for product in products %}

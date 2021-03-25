@@ -1,6 +1,8 @@
-from django.test import TestCase
 from django.contrib.auth.models import User
-from store.models import Category,Product
+from django.test import TestCase
+
+from store.models import Category, Product
+
 
 class TestCategoriesModel(TestCase):
 
@@ -13,6 +15,7 @@ class TestCategoriesModel(TestCase):
       """
       data = self.data1
       self.assertTrue(isinstance(data,Category))
+      self.assertEqual(str(data),'webtoon')
   
   def test_category_model_entry(self):
       """

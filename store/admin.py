@@ -1,4 +1,5 @@
 from django.contrib import admin
+
 from .models import Category, Product
 
 # https://medium.com/@oguzhanoyan/8-django-uygulama-g%C3%B6r%C3%BCn%C3%BCm%C3%BC-d%C3%BCzenlemek-da5aac1d745f
