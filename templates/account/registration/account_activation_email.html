@@ -1,0 +1,6 @@
+{% autoescape off %}
+ Merhaba {{user.user_name}}
+ Hesabınız başarıyla oluşturulmuştur. 
+ Hesabınızı etkinleştirmek için lütfen aşağıdaki bağlantıyı tıklayın
+ http://{{ domain }}{% url 'account:activate' uidb64=uid token=token %}
+{% endautoescape %}

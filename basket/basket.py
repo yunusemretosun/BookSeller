@@ -54,8 +54,6 @@ class Basket():
             item['price'] = Decimal(item['price'])
             item['total_price'] = item['price'] * item['qty']
             yield item
-
-      
     
     def __len__(self):
 
